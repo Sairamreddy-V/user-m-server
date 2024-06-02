@@ -1,0 +1,12 @@
+GET http://localhost:3000/users
+
+POST http://localhost:3000/user 
+"Contennt-type":"application/json"
+
+{
+    "name": 'Sai',
+    "dateOfBirth": '09-08-3000',
+    "contactNumber": '9063672350',
+    "emailId": 'sairamreddy',
+    "userDiscription": 'zdgfhgjvkbjo'
+}
