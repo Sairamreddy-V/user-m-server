@@ -31,6 +31,11 @@ const initializingDbandServerConnection= async()=>{
 initializingDbandServerConnection()
 
 
+
+app.get("/",()=>{
+        response.send ("Hello")
+})
+
 // api for getting all the users in the user table
 app.get('https://user-m-server-sairamreddy-vs-projects.vercel.app/users',async(request,response)=>{
     try{
