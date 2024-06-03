@@ -32,7 +32,7 @@ initializingDbandServerConnection()
 
 
 // api for getting all the users in the user table
-app.get('/users',async(request,response)=>{
+app.get('https://user-m-server-sairamreddy-vs-projects.vercel.app/users',async(request,response)=>{
     try{
         const search = request.query.search || "";
         const page = parseInt(request.query.page, 10) || 1;
@@ -56,7 +56,7 @@ app.get('/users',async(request,response)=>{
 })
 
 //api for to insert a user into the users table
-app.post('/user',async(request,response)=>{
+app.post('https://user-m-server-sairamreddy-vs-projects.vercel.app/user',async(request,response)=>{
     try{
         const {name,dateOfBirth,contactNumber,emailId,userDiscription}=request.body
         const query=`
@@ -76,7 +76,7 @@ app.post('/user',async(request,response)=>{
 })
 
 //api for the getting a user on Id
-app.get('/user/:id',async(request,response)=>{
+app.get('https://user-m-server-sairamreddy-vs-projects.vercel.app/user/:id',async(request,response)=>{
     try{
         const {id}=request.params
         const query=`
@@ -96,7 +96,7 @@ app.get('/user/:id',async(request,response)=>{
 
 
 //api to edit the user
-app.put('/edit-user/:id',async (request,response)=>{
+app.put('https://user-m-server-sairamreddy-vs-projects.vercel.app/edit-user/:id',async (request,response)=>{
     try{
         const {id}=request.params 
         const {name,dataOfBirth,contactNumber,emailId,userDiscription}=request.body
@@ -115,7 +115,7 @@ app.put('/edit-user/:id',async (request,response)=>{
 })
 
 // api to delete user
-app.delete('/delete-user/:id',async(request,response)=>{
+app.delete('https://user-m-server-sairamreddy-vs-projects.vercel.app/delete-user/:id',async(request,response)=>{
     try{
         const {id}=request.params
         const query=`
